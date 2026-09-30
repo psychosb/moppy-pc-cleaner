@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moppy vs outros limpadores</title>
+<meta name="description" content="Comparação factual entre o Moppy e limpadores de Windows conhecidos: o que cada um apaga, o que dá para desfazer, o que coleta e quanto custa.">
+<style>
+:root{--bg:#f6f7fb;--fg:#1b1f2a;--muted:#5c6270;--brand:#3563d9;--ok:#2e8b57;--warn:#c9822f;--line:#e2e5ee;--card:#ffffff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12151d;--fg:#e8eaf0;--muted:#a0a6b3;--line:#2a2f3c;--card:#1a1e29}}
+:root[data-theme="dark"]{--bg:#12151d;--fg:#e8eaf0;--muted:#a0a6b3;--line:#2a2f3c;--card:#1a1e29}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 "Segoe UI Variable","Segoe UI",system-ui,sans-serif}
+main{max-width:960px;margin:0 auto;padding:40px 16px 64px}
+h1{font-size:2rem;margin:0 0 8px}h2{font-size:1.25rem;margin:40px 0 12px}
+p.lead{color:var(--muted);max-width:70ch;margin:0 0 24px}
+.table{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:720px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;color:var(--muted);font-size:.9rem}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600;width:24%}
+.yes{color:var(--ok);font-weight:600}.no{color:var(--warn)}
+.cta{display:inline-block;margin-top:24px;background:var(--brand);color:#fff;text-decoration:none;padding:12px 20px;border-radius:10px;font-weight:600}
+.note{font-size:.85rem;color:var(--muted);margin-top:16px;max-width:75ch}
+footer{margin-top:48px;font-size:.85rem;color:var(--muted)}
+footer a{color:var(--brand)}
+</style>
+</head>
+<body>
+<main>
+<h1>Moppy comparado com outros limpadores</h1>
+<p class="lead">Uma tabela sem adjetivos: o que cada ferramenta faz, o que dá para desfazer e quanto custa. Os dados dos outros produtos vêm das páginas e políticas públicas de cada um; se algo mudou, escreva para <a href="mailto:psychosb.dev@outlook.com">psychosb.dev@outlook.com</a>.</p>
+
+<div class="table">
+<table>
+<thead><tr><th></th><th>Moppy</th><th>CCleaner Free</th><th>Wise Disk Cleaner</th><th>BleachBit</th><th>Sensor de Armazenamento (Windows)</th></tr></thead>
+<tbody>
+<tr><td>Arquivos limpos podem ser restaurados</td><td class="yes">Sim, 7 dias em quarentena</td><td class="no">Não</td><td class="no">Não</td><td class="no">Não</td><td class="no">Não</td></tr>
+<tr><td>Ajustes no Windows com backup e Reverter</td><td class="yes">Sim, .reg por alteração, página Desfazer</td><td>Só o registro, arquivo .reg opcional</td><td class="no">Não</td><td class="no">Não</td><td class="no">Não se aplica</td></tr>
+<tr><td>Mostra o que vai apagar, arquivo por arquivo, antes</td><td class="yes">Sim</td><td>Sim</td><td>Sim</td><td>Sim</td><td class="no">Não</td></tr>
+<tr><td>Conta ou cadastro</td><td class="yes">Nenhum</td><td>Opcional</td><td>Nenhum</td><td>Nenhum</td><td>Conta Microsoft do Windows</td></tr>
+<tr><td>Telemetria do próprio limpador</td><td class="yes">Nenhuma</td><td>Coleta de uso, desligável nas opções</td><td>Ver política do fabricante</td><td class="yes">Nenhuma</td><td>A do Windows</td></tr>
+<tr><td>Anúncios ou ofertas dentro do app</td><td class="yes">Nenhum</td><td>Ofertas de upgrade na versão gratuita</td><td>Ofertas de outros produtos da mesma casa</td><td class="yes">Nenhum</td><td class="yes">Nenhum</td></tr>
+<tr><td>Descobre quais pastas cresceram desde a última vez</td><td class="yes">Sim, Detetive de espaço</td><td class="no">Não</td><td class="no">Não</td><td class="no">Não</td><td class="no">Não</td></tr>
+<tr><td>Inicialização com nível de confiança (assinatura, origem)</td><td class="yes">Sim</td><td>Lista, sem nível</td><td>Lista, sem nível</td><td class="no">Não</td><td class="no">Não</td></tr>
+<tr><td>Tarefas agendadas e serviços de atualização de terceiros</td><td class="yes">Sim, com interruptor reversível</td><td>Tarefas sim, serviços não</td><td class="no">Não</td><td class="no">Não</td><td class="no">Não</td></tr>
+<tr><td>Remoção de bloatware de fabricante e da Store</td><td class="yes">Sim, por usuário, reinstalável</td><td class="no">Não</td><td class="no">Não</td><td class="no">Não</td><td class="no">Não</td></tr>
+<tr><td>Atualiza programas instalados fora da Store</td><td class="yes">Sim, pelo winget</td><td>Só na versão paga</td><td class="no">Não</td><td class="no">Não</td><td class="no">Não</td></tr>
+<tr><td>Eleva para administrador sozinho</td><td class="yes">Nunca; avisa o que exige</td><td>Pede ao abrir</td><td>Pede ao abrir</td><td>Opcional</td><td class="no">Não se aplica</td></tr>
+<tr><td>Código</td><td>Fechado, nativo (WinUI 3)</td><td>Fechado</td><td>Fechado</td><td class="yes">Aberto</td><td>Fechado</td></tr>
+<tr><td>Preço</td><td>Compra única, teste de 7 dias</td><td>Grátis com ofertas; Pro por assinatura</td><td>Grátis com ofertas; Pro pago</td><td class="yes">Grátis</td><td class="yes">Grátis, embutido</td></tr>
+</tbody>
+</table>
+</div>
+
+<a class="cta" href="https://apps.microsoft.com/detail/9P1HT617VSTN">Ver o Moppy na Microsoft Store</a>
+
+<p class="note">Tabela atualizada em setembro de 2026. "Ver política do fabricante" significa que não encontramos uma afirmação clara e preferimos não afirmar por eles. O BleachBit e o Sensor de Armazenamento são boas opções gratuitas; o Moppy existe para quem quer as mesmas limpezas com volta e mais diagnóstico.</p>
+
+<h2>Por que "tudo tem volta" importa</h2>
+<p>Limpar é apagar. A diferença entre uma ferramenta que você usa toda semana e uma que você abre com medo é saber que um erro custa um clique, não um domingo. No Moppy, os arquivos limpos ficam sete dias na quarentena, cada ajuste no Windows gera um backup do registro antes de mudar, e a página Desfazer lista tudo isso com um botão Reverter.</p>
+
+<footer><a href="./">Política de privacidade</a> · Lumat Studio · <a href="mailto:psychosb.dev@outlook.com">psychosb.dev@outlook.com</a></footer>
+</main>
+</body>
+</html>
